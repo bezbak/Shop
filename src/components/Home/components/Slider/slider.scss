@@ -1,0 +1,56 @@
+
+.slider{
+    padding: 100px 0;
+    &__inner{
+        >.title{
+            font-family: 'Muller';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        align-items: baseline;
+        .slider__block{
+            padding: 50px 50px;
+            text-align: center;
+            .block{
+                &__top{
+                    padding: 10px;
+                    position: relative;
+                    background-color: #F7F7F7;
+                    background-position: bottom;
+                    background-size: 150px;
+                }
+                &__bottom{
+                    padding: 30px 0;
+                    background-color: #F7F7F7;
+                    >span{
+                        font-family: 'Muller';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                    >p{
+                        font-family: 'Muller';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        // max-width: 1200px;
+        overflow: hidden;
+        .slider__block{
+        }
+    }
+}
+.slick-track{
+    display: flex;
+}
