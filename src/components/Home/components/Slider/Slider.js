@@ -6,7 +6,7 @@ export default function Slider2() {
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1
       };
   return (
@@ -45,6 +45,7 @@ export default function Slider2() {
                     ))
                 }
                 </Slider>
+                <button className='slider_button'>Открыть каталог</button>
             </div>
         </div>
       </div>

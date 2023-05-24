@@ -23,3 +23,34 @@ input{
   outline: none;
   border: none;
 }
+
+@media (max-width:1500px) {
+  .container {
+      max-width: 1200px;
+  }
+}
+@media (max-width:1200px) {
+  .container {
+      max-width: 1000px;
+  }
+}
+@media (max-width:1000px) {
+  .container {
+      max-width: 800px;
+  }
+}
+@media (max-width:800px) {
+  .container {
+      max-width: 600px;
+  }
+}
+@media (max-width:600px) {
+  .container {
+      max-width: 400px;
+  }
+}
+@media (max-width:400px) {
+  .container {
+      max-width: 340px;
+  }
+}
