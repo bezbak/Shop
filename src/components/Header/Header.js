@@ -3,7 +3,9 @@ import "./header.css"
 import logo from "../../assets/images/logo.png"
 import search2 from "../../assets/images/Search.png"
 import bag from "../../assets/images/bag.png"
+import { useNavigate } from 'react-router'
 export default function Header({setSearch}) {
+  const nav = useNavigate()
   return (
     <div className='header'>
       <div className="container">
@@ -17,7 +19,7 @@ export default function Header({setSearch}) {
             </div>
             <form action="" className="haeder__search">
                 <input onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder='Поиск'/>
-                <button><img src={search2} alt="" /></button>
+                <button onClick={()=>nav('/catalog')}><img src={search2} alt="" /></button>
             </form>
             <div className="header__card">
                 <img src={bag} alt="" />
