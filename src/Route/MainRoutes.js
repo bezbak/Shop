@@ -2,10 +2,10 @@ import React from 'react'
 import { Route, Routes } from 'react-router'
 import Home from '../components/Home/Home'
 import Katalog from '../components/Katalog/Katalog'
-export default function MainRoutes() {
+export default function MainRoutes({search, setSearch}) {
     const PUBLIC_ROUTES = [
         {link:"", element:<Home/>, id:1},
-        {link:"/catalog", element:<Katalog/>, id:2},
+        {link:"/catalog", element:<Katalog search={search}/>, id:2},
     ]
   return (
     <>

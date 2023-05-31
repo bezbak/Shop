@@ -6,6 +6,66 @@ import rev1 from '../assets/images/Ellipse 5.png'
 import rev2 from '../assets/images/Ellipse 5 (1).png'
 import rev3 from '../assets/images/Ellipse 5 (2).png'
 
+export const all_products = [
+    {
+        name:"iPhone 12 Pro",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 11 Pro",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 13 Pro",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 13",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 12",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 10",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 22",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+    {
+        name:"iPhone 23",
+        price: "1200$",
+        som_price:"120 000 сом",
+        img:iphone1,
+        id:1
+    },
+
+]
+
 export const slider_1 = [
     {
         name:"iPhone 14 Pro",

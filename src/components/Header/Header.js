@@ -1,9 +1,9 @@
 import React from 'react'
 import "./header.css"
 import logo from "../../assets/images/logo.png"
-import search from "../../assets/images/Search.png"
+import search2 from "../../assets/images/Search.png"
 import bag from "../../assets/images/bag.png"
-export default function Header() {
+export default function Header({setSearch}) {
   return (
     <div className='header'>
       <div className="container">
@@ -16,8 +16,8 @@ export default function Header() {
                 <a href="" className="header__link">Контакты</a>
             </div>
             <form action="" className="haeder__search">
-                <input type="text" placeholder='Поиск'/>
-                <button><img src={search} alt="" /></button>
+                <input onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder='Поиск'/>
+                <button><img src={search2} alt="" /></button>
             </form>
             <div className="header__card">
                 <img src={bag} alt="" />

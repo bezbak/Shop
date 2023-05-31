@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./katalog.scss"
-export default function Katalog() {
+import { all_products } from '../../consts/consts'
+export default function Katalog({search}) {
   const [price1, setPrice1] = useState(0)
   const [price2, setPrice2] = useState(100000)
+  const [products, setProducts] = useState([])
+  useEffect(()=>{
+    setProducts(all_products.filter(el => el.name.toLowerCase().includes(search.toLowerCase())))
+  }, [products])
   return (
     <div className='katalog'>
       <div className="container">
@@ -32,6 +37,13 @@ export default function Katalog() {
               </div>
             </div>
           </form>
+          <div className="katalog_products">
+            {
+              products.map((product)=>(
+                <h1>{product.name}</h1>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
